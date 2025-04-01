@@ -1,4 +1,4 @@
-# str2bool v.1.1
+# str2bool
 
 ## About
 Convert string to boolean.
