@@ -1,0 +1,44 @@
+[project]
+name = "str2bool"
+version = "1.2"
+description = "Convert string to boolean"
+authors = [
+    { name = "Gene Pasquet", email = "gene.pasquet@flyr.com" },
+    { name = "SymonSoft", email = "symonsoft@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "str2bool",
+    "bool",
+    "boolean",
+    "convert",
+    "yes",
+    "no",
+    "true",
+    "false",
+]
+license = { text = "BSD License" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Utilities",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/symonsoft/str2bool"
+Download = "https://github.com/symonsoft/str2bool/tarball/1.1"
