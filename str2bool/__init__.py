@@ -1,17 +1,7 @@
 from typing import Optional, cast
-import sys
-
-PYTHON_2 = sys.version_info[0] < 2
-
-if not PYTHON_2:
-    basestring = str  # type: ignore[assignment]
 
 _true_set = {"yes", "true", "t", "y", "1"}
 _false_set = {"no", "false", "f", "n", "0"}
-
-
-def _is_string(value) -> bool:
-    return isinstance(value, str) or (PYTHON_2 and isinstance(value, basestring))
 
 
 def str2bool(value: str, raise_exc: bool = False) -> Optional[bool]:
@@ -25,7 +15,7 @@ def str2bool(value: str, raise_exc: bool = False) -> Optional[bool]:
     Returns:
         Optional[bool]: The converted boolean value, or None if the string cannot be converted and raise_exc is False.
     """
-    if _is_string(value):
+    if isinstance(value, str):
         value = value.lower()
         if value in _true_set:
             return True
