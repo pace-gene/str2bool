@@ -41,4 +41,4 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/symonsoft/str2bool"
-Download = "https://github.com/symonsoft/str2bool/tarball/1.1"
+Download = "https://github.com/symonsoft/str2bool/tarball/1.2"
